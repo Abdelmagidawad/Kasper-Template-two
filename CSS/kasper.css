@@ -769,7 +769,7 @@ header nav .form:hover {
   }
 
   50% {
-    transform: translateX(7px);
+    transform: translateX(-7px);
   }
 }
 
