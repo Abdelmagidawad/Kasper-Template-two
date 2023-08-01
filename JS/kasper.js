@@ -7,6 +7,13 @@ window.addEventListener("scroll", function () {
   }
 });
 
+scrollUp.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+
 let div = document.querySelector(".our-skills");
 let spans = document.querySelectorAll(".prog span");
 window.addEventListener("scroll", function () {
