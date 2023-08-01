@@ -1513,14 +1513,15 @@ header nav .form:hover {
   position: fixed;
   right: 30px;
   bottom: 35px;
-  z-index: 3;
+  cursor: pointer;
+  z-index: -1;
+  opacity: 0;
+  transition: 0.4s;
 }
 
-@media (max-width: 767px) {
-  .up-icon {
-    right: 10px;
-    bottom: 40px;
-  }
+.up-icon.show {
+  opacity: 1;
+  z-index: 3;
 }
 
 .up-icon i {
